@@ -15,16 +15,23 @@ public class HelloWorldEndpoint {
     @GET
     @Produces("text/plain")
     public Response doGet() {
+        ClassLoader tccl = Thread.currentThread().getContextClassLoader();
         ForkJoinPool.commonPool()
             .execute(() -> {
-                Client client = ClientBuilder.newClient();
-                String s = client.target("http://www.google.com")
-                    .request()
-                    .get()
-                    .readEntity(String.class);
+                ClassLoader current = Thread.currentThread().getContextClassLoader();
+                Thread.currentThread().setContextClassLoader(tccl);
+                try {
+                    Client client = ClientBuilder.newClient();
+                    String s = client.target("http://www.google.com")
+                        .request()
+                        .get()
+                        .readEntity(String.class);
 
-                client.close();
-                System.out.println(s);
+                    client.close();
+                    System.out.println(s);
+                } finally {
+                    Thread.currentThread().setContextClassLoader(current);
+                }
             });
 
 

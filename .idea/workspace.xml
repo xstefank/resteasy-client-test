@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1222c078-ed1c-434d-8e22-d703cdc6ee09" name="Default Changelist" comment="" />
+    <list default="true" id="1222c078-ed1c-434d-8e22-d703cdc6ee09" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/xstefank/resteasyclienttest/rest/HelloWorldEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/xstefank/resteasyclienttest/rest/HelloWorldEndpoint.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +19,7 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="bootable-jar-project-rest-client/api-crc-testing:6443/kube:admin" />
@@ -125,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601987558009</updated>
-      <workItem from="1601987559145" duration="277000" />
+      <workItem from="1601987559145" duration="952000" />
     </task>
     <servers />
   </component>
